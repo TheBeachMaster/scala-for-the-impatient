@@ -1,5 +1,9 @@
 package com.chapter1.basics
 
+import scala.math._
+import scala.util.Random
+import scala.BigInt.probablePrime
+
 object Main extends App {
     println("Hello World to the basics")
 
@@ -39,5 +43,33 @@ object Main extends App {
     val bigX: BigInt = 123456789
     println("Big int: " + bigX * bigX * bigX)
 
-    
+    // Excercises
+    var myString : String = "crazy"
+    myString = myString * 3
+    println("The result of multplying a string with an int is: " + myString)
+
+    val maxU : Any = 10 max 2
+    println("10 max 2 is: " + maxU)
+
+    val bigNumX : BigInt = BigInt(2) pow 1024
+    println("2 power 1024 is: " + bigNumX)
+
+    var primeNum : BigInt = 0
+    primeNum = probablePrime(100, Random)
+    println(" The probable prime is: " + primeNum)
+
+    var fileNameN : BigInt = 1234567890 * 1239874560
+    var fileNameS : String = null
+
+    fileNameS = fileNameN.toString(36)
+
+    println("Your File name is: " + fileNameS)
+
+    val myStr : String = "MyString"
+
+    val fChar : Any = myStr.head
+    val lChar : Any = myStr.last
+
+    println("First Letter of " + myStr + " is: " + fChar + " and last letter is: " + lChar)
+
 }
