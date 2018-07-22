@@ -25,15 +25,16 @@ object Main extends App {
 
     // It is possible to chain multiple variables together
     val dimX, dimY, dimZ : Int = 100
-    var volume, area: Int = null
+    var volume, area: Int = 0
 
     volume = dimX * dimY * dimZ
-    area = dimx * dimY
+    area = dimX * dimY
 
     println("Total volume is: " + volume + " cubic centimeters")
     println("Total area is: " + area + " square centimeters")
 
-    println("20 to 30" + 20 to 30)
+    // TODO 
+    println("20 to 30: " + 20.to(30))
 
     val bigX: BigInt = 123456789
     println("Big int: " + bigX * bigX * bigX)
